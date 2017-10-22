@@ -1,0 +1,42 @@
+{
+  "projects": {
+    "master": "ms-yees-quiz",
+    "prod": "ms-yees-quiz"
+  },
+  "ci": {
+    "createConfig": {
+      "master": {
+        "version": "${npm_package_version}",
+        "env": "development",
+        "firebase": {
+          "apiKey": "AIzaSyD8rb2xlDbIGoUT1YMTtY1_bKD6p4P5Z0w",
+          "authDomain": "ms-yees-quiz.firebaseapp.com",
+          "databaseURL": "https://ms-yees-quiz.firebaseio.com",
+          "projectId": "ms-yees-quiz",
+          "storageBucket": "ms-yees-quiz.appspot.com"
+        },
+        "reduxFirebase": {
+          "userProfile": "users",
+          "enableLogging": false,
+          "updateProfileOnLogin": false
+        }
+      },
+      "prod": {
+        "version": "${npm_package_version}",
+        "env": "production",
+        "firebase": {
+          "apiKey": "AIzaSyD8rb2xlDbIGoUT1YMTtY1_bKD6p4P5Z0w",
+          "authDomain": "ms-yees-quiz.firebaseapp.com",
+          "databaseURL": "https://ms-yees-quiz.firebaseio.com",
+          "projectId": "ms-yees-quiz",
+          "storageBucket": "ms-yees-quiz.appspot.com"
+        },
+        "reduxFirebase": {
+          "userProfile": "users",
+          "enableLogging": false,
+          "updateProfileOnLogin": false
+        }
+      }
+    }
+  }
+}
