@@ -1,16 +1,23 @@
 import {
-  blueGrey100, blueGrey500, blueGrey700,
-  pinkA200, tealA100, lightBlue500,
-  grey900, white, grey400, darkBlack
-} from 'material-ui/styles/colors'
-import {fade} from 'material-ui/utils/colorManipulator'
-import spacing from 'material-ui/styles/spacing'
-import zIndex from 'material-ui/styles/zIndex'
+  blueGrey100,
+  blueGrey500,
+  blueGrey700,
+  pinkA200,
+  tealA100,
+  lightBlue500,
+  grey900,
+  white,
+  grey400,
+  darkBlack
+} from 'material-ui/styles/colors';
+import { fade } from 'material-ui/utils/colorManipulator';
+import spacing from 'material-ui/styles/spacing';
+import zIndex from 'material-ui/styles/zIndex';
 
 export default {
   spacing,
   zIndex: zIndex,
-  fontFamily: 'Roboto, sans-serif',
+  fontFamily: 'Montserrat, sans-serif',
   palette: {
     primary1Color: blueGrey500,
     primary2Color: blueGrey700,
@@ -25,4 +32,4 @@ export default {
     disabledColor: fade(darkBlack, 0.3),
     pickerHeaderColor: pinkA200
   }
-}
+};
